@@ -1,0 +1,18 @@
+{
+  "name": "vite-project",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "axios": "^1.6.2",
+    "concurrently": "^8.2.2",
+    "json-server": "^0.17.4",
+    "scss": "^0.2.4",
+    "vite": "^4.4.5"
+  }
+}
