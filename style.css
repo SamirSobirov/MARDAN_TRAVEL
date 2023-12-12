@@ -1320,11 +1320,7 @@ video {
 .duration-500 {
   transition-duration: 500ms;
 }
-.iframe_div {
-  align-items: center;
-  text-align: center;
-  justify-content: center;
-}
+
 
 iframe {
   border-radius: 12px;
