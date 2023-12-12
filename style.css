@@ -1321,6 +1321,10 @@ video {
   transition-duration: 500ms;
 }
 
+iframe {
+  border-radius: 12px;
+}
+
 * {
   margin: 0;
   padding: 0;
