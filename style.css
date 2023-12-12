@@ -3782,3 +3782,13 @@ input {
   height: 50px;
   border-radius: 10px;
 }
+
+footer img {
+  border-radius: 14px;
+}
+
+
+footer {
+  margin-top: 100px;
+  border-radius: 4px;
+}
