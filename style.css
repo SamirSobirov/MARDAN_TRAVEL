@@ -3774,3 +3774,11 @@ input {
 .css-15v22id-MuiAccordionDetails-root {
   padding: 8px 16px 16px;
 }
+
+
+
+
+#tour_btn {
+  height: 50px;
+  border-radius: 10px;
+}
