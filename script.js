@@ -17,7 +17,7 @@ const tours = [
   {
     name: "Грузия",
     image: "/images/toursImage/georgia.webp",
-    link: ""
+    link: "/tour/2.html"
   },
   {
     name: "Шарм эль шейх",
