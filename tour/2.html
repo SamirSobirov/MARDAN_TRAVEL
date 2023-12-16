@@ -4,20 +4,20 @@
 <head>
     <meta charset="utf-8">
     <title>MARDAN TRAVEL - Главная</title>
-   
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="robots" content="index, follow">
     <meta name="geo.region" content="UZ">
-    
-  
+
+
 
     <meta property="og:locale" content="ru_RU">
     <link rel="icon" sizes="32x32" href="/public/images/icons/mardan_travel_img.jpg">
-  
+
     <link rel="stylesheet" href="/style.css">
-  
-  </head>
-  
+
+</head>
+
 <style>
     @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
@@ -3858,14 +3858,22 @@ Constrain images and videos to the parent width and preserve their intrinsic asp
         <div>
             <div class="">
                 <header class="h-[20vh] flex items-center justify-between px-4 lt:px-0 container mx-auto"><a
-                        href="/"><img src="/public/images/icons/mardan_travel_img-removebg-preview (1).png"
-                            width="250px" height="250px"></a>
+                        id="header_logo" href="/"><img
+                            src="/public/images/icons/mardan_travel_img-removebg-preview (1).png"></a>
                     <nav class="flex gap-x-[10px] md:gap-x-4 lg:gap-x-5 xxl:gap-x-6"><a
                             class="text-sm font-semibold duration-300 md:text-base lg:cursor-pointer lg:hover:text-[var(--main-color-two)] lg:text-lg xl:text-xl xxl:text-[22px] text-[#fff]"
                             href="/tour/services/uslugi.html">Услуги</a><a
                             class="text-[#fff] text-sm font-semibold duration-300 md:text-base lg:cursor-pointer lg:hover:text-[var(--main-color-two)] lg:text-lg xl:text-xl xxl:text-[22px]"
                             href="/">Главная</a></nav>
 
+
+                    <style>
+                        #header_logo {
+                            object-fit: contain;
+                            width: 150px;
+                            height: 100px;
+                        }
+                    </style>
                 </header>
                 <main class="px-4 lt:px-0 container mx-auto">
                     <div class="Toastify"></div>
@@ -4179,55 +4187,55 @@ Constrain images and videos to the parent width and preserve their intrinsic asp
                                         style="opacity: 1; transform: none;">
                                         <div class="sticky top-0 bottom-0 w-full">
                                             <form
-                                            class="space-y-3.5 w-full px-4 py-5 bg-[var(--main-color)] lg:border-[var(--main-color-two)] lg:border lg:rounded-xl">
-                                            <h1 class="font-semibold text-lg text-white md:text-xl">Забронировать
-                                                тур</h1>
-                                            <p class="text-xs text-white md:text-sm">Оставьте заявку и наш менеджер
-                                                свяжется с вами</p>
-                                            <div>
-                                                <p class="text-sm text-white md:text-base mb-2">Ваше имя</p><input
-                                                    name="name"
-                                                    class="py-1.5 px-2 w-full bg-transparent border border-white text-sm text-white md:text-base rounded-lg">
-                                            </div>
-                                            <div>
-                                                <p class="text-sm text-white md:text-base mb-2">Ваш телефон</p>
-                                                <div class="react-international-phone-input-container">
-                                                    <div class="react-international-phone-country-selector"><button
-                                                            title="Uzbekistan" role="combobox"
-                                                            aria-label="Country selector" aria-haspopup="listbox"
-                                                            aria-expanded="false" type="button"
-                                                            class="react-international-phone-country-selector-button"
-                                                            data-country="uz">
-                                                            <div
-                                                                class="react-international-phone-country-selector-button__button-content">
-                                                                <img class="react-international-phone-flag-emoji react-international-phone-country-selector-button__flag-emoji"
-                                                                    src="https://cdnjs.cloudflare.com/ajax/libs/twemoji/14.0.2/svg/1f1fa-1f1ff.svg"
-                                                                    width="24px" height="24px" draggable="false"
-                                                                    data-country="uz" loading="lazy"
-                                                                    style="visibility: visible;">
-                                                                <div
-                                                                    class="react-international-phone-country-selector-button__dropdown-arrow">
-                                                                </div>
-                                                            </div>
-                                                        </button>
-                                                        <ul role="listbox"
-                                                            class="react-international-phone-country-selector-dropdown"
-                                                            tabindex="-1" aria-activedescendant="uz-option"
-                                                            style="display: none;">
-                                                        </ul>s
-
-
-                                                    </div><input type="tel" class="react-international-phone-input"
-                                                        value="+998 ">
+                                                class="space-y-3.5 w-full px-4 py-5 bg-[var(--main-color)] lg:border-[var(--main-color-two)] lg:border lg:rounded-xl">
+                                                <h1 class="font-semibold text-lg text-white md:text-xl">Забронировать
+                                                    тур</h1>
+                                                <p class="text-xs text-white md:text-sm">Оставьте заявку и наш менеджер
+                                                    свяжется с вами</p>
+                                                <div>
+                                                    <p class="text-sm text-white md:text-base mb-2">Ваше имя</p><input
+                                                        name="name"
+                                                        class="py-1.5 px-2 w-full bg-transparent border border-white text-sm text-white md:text-base rounded-lg">
                                                 </div>
-                                            </div>
-                                            <div>
-                                                <p class="text-sm text-white md:text-base mb-2">Ваш E-mail</p><input
-                                                    name="email"
-                                                    class="py-1.5 px-2 w-full bg-transparent border border-white text-sm text-white md:text-base rounded-lg">
-                                            </div><button type="submit"
-                                                class="rounded-3xl duration-300 w-full py-1.5 text-white bg-[var(--main-color-two)] font-medium lg:hover:brightness-[.8]">Забронировать</button>
-                                        </form>
+                                                <div>
+                                                    <p class="text-sm text-white md:text-base mb-2">Ваш телефон</p>
+                                                    <div class="react-international-phone-input-container">
+                                                        <div class="react-international-phone-country-selector"><button
+                                                                title="Uzbekistan" role="combobox"
+                                                                aria-label="Country selector" aria-haspopup="listbox"
+                                                                aria-expanded="false" type="button"
+                                                                class="react-international-phone-country-selector-button"
+                                                                data-country="uz">
+                                                                <div
+                                                                    class="react-international-phone-country-selector-button__button-content">
+                                                                    <img class="react-international-phone-flag-emoji react-international-phone-country-selector-button__flag-emoji"
+                                                                        src="https://cdnjs.cloudflare.com/ajax/libs/twemoji/14.0.2/svg/1f1fa-1f1ff.svg"
+                                                                        width="24px" height="24px" draggable="false"
+                                                                        data-country="uz" loading="lazy"
+                                                                        style="visibility: visible;">
+                                                                    <div
+                                                                        class="react-international-phone-country-selector-button__dropdown-arrow">
+                                                                    </div>
+                                                                </div>
+                                                            </button>
+                                                            <ul role="listbox"
+                                                                class="react-international-phone-country-selector-dropdown"
+                                                                tabindex="-1" aria-activedescendant="uz-option"
+                                                                style="display: none;">
+                                                            </ul>s
+
+
+                                                        </div><input type="tel" class="react-international-phone-input"
+                                                            value="+998 ">
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <p class="text-sm text-white md:text-base mb-2">Ваш E-mail</p><input
+                                                        name="email"
+                                                        class="py-1.5 px-2 w-full bg-transparent border border-white text-sm text-white md:text-base rounded-lg">
+                                                </div><button type="submit"
+                                                    class="rounded-3xl duration-300 w-full py-1.5 text-white bg-[var(--main-color-two)] font-medium lg:hover:brightness-[.8]">Забронировать</button>
+                                            </form>
                                         </div>
                                     </div>
                                 </div>
@@ -4235,7 +4243,7 @@ Constrain images and videos to the parent width and preserve their intrinsic asp
                         </section>
                         <div class="w-full bg-[var(--main-color)] overflow-y-scroll rounded-2xl overflow-hidden border-t border-[#ffffff] bottom-[75px] fixed left-0 z-10 h-4/5 lg:hidden"
                             style="transform: translateY(100%) translateZ(0px);">
-                           
+
                         </div>
                         <div
                             class="fixed bottom-0 left-0 w-full h-[75px] bg-[var(--main-color)] border-t border-[#ffffff] lg:hidden z-50">
@@ -4248,11 +4256,11 @@ Constrain images and videos to the parent width and preserve their intrinsic asp
                 </main>
                 <footer
                     class=" py-[27px] flex flex-col items-center space-y-[20px] lg:flex-row lg:justify-between px-4 lt:px-0 container mx-auto">
-                    <img src="/public/images/icons/mardan_travel_img-removebg-preview (1).png" width="220px"
-                        height="300px" class="h-[75px] md:h-[85px]" alt="" style="opacity: 1; transform: none;">
+                    <img id="footer_logo" src="/public/images/icons/mardan_travel_img-removebg-preview (1).png"
+                        class="h-[75px] md:h-[85px]" alt="" style="opacity: 1; transform: none;">
                     <nav class="space-y-[5px]" style="opacity: 1; transform: none;"><a
                             class="block text-[#fff] text-sm text-center md:text-base lg:cursor-pointer lg:hover:text-[var(--main-color-two)] duration-500 lg:text-left lg:text-lg"
-                            href="/tour/services/uslugi.html">Услуги</a><a
+                            href="/tour/services/uslugi">Услуги</a><a
                             class="block text-[#fff] text-sm text-center md:text-base lg:cursor-pointer lg:hover:text-[var(--main-color-two)] duration-500 lg:text-left lg:text-lg"
                             href="/">Главная</a></nav>
                     <div class="gap-y-[5px] lg:hidden"><a class="flex items-center gap-x-[7px]" href="tel:+998933360800"
@@ -4312,14 +4320,14 @@ Constrain images and videos to the parent width and preserve their intrinsic asp
         </div>
     </div>
     <div id="__next-build-watcher"
-    style="position: fixed; bottom: 10px; right: 20px; width: 0px; height: 0px; z-index: 99999;"></div>
-  <next-route-announcer>
-    <p aria-live="assertive" id="__next-route-announcer__" role="alert"
-      style="border: 0px; clip: rect(0px, 0px, 0px, 0px); height: 1px; margin: -1px; overflow: hidden; padding: 0px; position: absolute; top: 0px; width: 1px; white-space: nowrap; overflow-wrap: normal;">
-      MARDAN TRAVEL</p>
-  </next-route-announcer>
+        style="position: fixed; bottom: 10px; right: 20px; width: 0px; height: 0px; z-index: 99999;"></div>
+    <next-route-announcer>
+        <p aria-live="assertive" id="__next-route-announcer__" role="alert"
+            style="border: 0px; clip: rect(0px, 0px, 0px, 0px); height: 1px; margin: -1px; overflow: hidden; padding: 0px; position: absolute; top: 0px; width: 1px; white-space: nowrap; overflow-wrap: normal;">
+            MARDAN TRAVEL</p>
+    </next-route-announcer>
 
-  <script type="module" src="/script.js"></script>
+    <script type="module" src="/script.js"></script>
 
 
 </body>
