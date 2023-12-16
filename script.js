@@ -36,7 +36,7 @@ const tours = [
   },
   {
     name: "Бали",
-    image: "/images/toursImage/bali.webp",
+    image: "/public/images/toursImage/bali.webp",
     link: "/tour/6.html"
   }
 ];
