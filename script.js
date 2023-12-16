@@ -11,32 +11,32 @@
 const tours = [
   {
     name: "Катар",
-    image: "/public/images/toursImage/qatar.webp",
+    image: "../public/images/toursImage/qatar.webp",
     link: "/tour/1.html"
   },
   {
     name: "Грузия",
-    image: "/public/images/toursImage/georgia.webp",
+    image: "../public/images/toursImage/georgia.webp",
     link: "/tour/2.html"
   },
   {
     name: "Шарм эль шейх",
-    image: "/public/images/toursImage/sharm.webp",
+    image: "../public/images/toursImage/sharm.webp",
     link: "/tour/3.html"
   },
   {
     name: "Прага",
-    image: "/public/images/toursImage/prague.webp",
+    image: "../public/images/toursImage/prague.webp",
     link: "/tour/4.html"
   },
   {
     name: "Анталья",
-    image: "/public/images/toursImage/antalya.webp",
+    image: "../public/images/toursImage/antalya.webp",
     link: "/tour/5.html"
   },
   {
     name: "Бали",
-    image: "/public/images/toursImage/bali.webp",
+    image: "../images/toursImage/bali.webp",
     link: "/tour/6.html"
   }
 ];
