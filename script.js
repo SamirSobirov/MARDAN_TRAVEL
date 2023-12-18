@@ -1,50 +1,42 @@
-// let body = document.body
-
-// let div_tour = document.getElementById('tour_div')
-
-
-// Object.assign(div_tour , newPath )
-
-
-
-// Задаем массив с информацией о турах
 const tours = [
   {
     name: "Катар",
     image: "/public/images/toursImage/qatar.webp",
-    link: "/tour/1.html"
+    link: "/tour/1.html",
+    fontClass: "font-[400]"
   },
   {
     name: "Грузия",
     image: "/public/images/toursImage/georgia.webp",
-    link: "/tour/2.html"
+    link: "/tour/2.html",
+    fontClass: "font-[500]"
   },
   {
     name: "Шарм эль шейх",
     image: "/public/images/toursImage/sharm.webp",
-    link: "/tour/3.html"
+    link: "/tour/3.html",
+    fontClass: "font-[500]"
   },
   {
     name: "Прага",
     image: "/public/images/toursImage/prague.webp",
-    link: "/tour/4.html"
+    link: "/tour/4.html",
+    fontClass: "font-[500]"
   },
   {
     name: "Анталья",
     image: "/public/images/toursImage/antalya.webp",
-    link: "/tour/5.html"
+    link: "/tour/5.html",
+    fontClass: "font-[500]"
   },
   {
     name: "Бали",
     image: "/public/images/toursImage/bali.webp",
-    link: "/tour/6.html"
+    link: "/tour/6.html",
+    fontClass: "font-[500]"
   }
 ];
 
-// Получаем контейнер для туров
-const tourContainer = document.getElementById("tour_div");
-
-// Создаем элементы для каждого тура и добавляем их в контейнер
 function createTourElement(tour) {
   const tourItem = document.createElement("div");
   tourItem.classList.add("aspect-[1/1.33]");
@@ -55,10 +47,11 @@ function createTourElement(tour) {
   tourLink.style.backgroundImage = `url("${tour.image}")`;
 
   const tourBtn = document.createElement("div");
+  tourBtn.id = "tour_btn";
   tourBtn.classList.add("w-full", "py-2", "bg-[var(--main-color-two)]", "text-[#fff]");
 
   const tourName = document.createElement("p");
-  tourName.classList.add("text-lg", "text-center", "font-[500]");
+  tourName.classList.add("text-lg", "text-center", tour.fontClass);
   tourName.textContent = tour.name;
 
   tourBtn.appendChild(tourName);
@@ -74,4 +67,5 @@ function appendToursToContainer(container, tours) {
   });
 }
 
+const tourContainer = document.getElementById("tour_div");
 appendToursToContainer(tourContainer, tours);
