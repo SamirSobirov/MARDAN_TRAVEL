@@ -13,6 +13,15 @@
     <link rel="icon" sizes="32x32" href="/public/images/icons/mardan_travel_img.jpg">
   
     <link rel="stylesheet" href="/style.css">
+
+    <!-- Swiper CSS -->
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+<!-- Your existing styles -->
+<style>
+    /* Add any additional styles here */
+</style>
+
   
   </head>
   
@@ -3878,41 +3887,28 @@ Constrain images and videos to the parent width and preserve their intrinsic asp
                     <div class="Toastify"></div>
                     <div class="">
                         <section class="space-y-10">
+
+                            //////////////
                             <div style="opacity: 1; transform: none;">
-                                <div
-
-
-                                    class="swiper swiper-initialized swiper-horizontal swiper-backface-hidden mySwiper aspect-[16/8.5] md:aspect-[16/5.5] rounded-2xl">
-                                    <div class="swiper-wrapper"
-                                        style="transition-duration: 0ms; transition-delay: 0ms; transform: translate3d(-1940px, 0px, 0px);">
-                                        <div class="swiper-slide" style="margin-right: 10px;"
-                                            data-swiper-slide-index="3">
-                                            <div class="bg-cover bg-center w-full h-full"
-                                                style="background-image: url(/public/images/toursImage/qatar4.webp);">
-                                            </div>
+                                <div class="swiper swiper-initialized swiper-horizontal swiper-backface-hidden mySwiper aspect-[16/8.5] md:aspect-[16/5.5] rounded-2xl">
+                                    <div class="swiper-wrapper" style="transition-duration: 0ms; transition-delay: 0ms; transform: translate3d(-1940px, 0px, 0px);">
+                                        <div class="swiper-slide" style="margin-right: 10px;" data-swiper-slide-index="3">
+                                            <div class="bg-cover bg-center w-full h-full" style="background-image: url(/public/images/toursImage/qatar4.webp);"></div>
                                         </div>
-                                        <div class="swiper-slide swiper-slide-prev" style="margin-right: 10px;"
-                                            data-swiper-slide-index="0">
-                                            <div class="bg-cover bg-center w-full h-full"
-                                                style="background-image: url(/public/images/toursImage/qatar1.webp);">
-                                            </div>
+                                        <div class="swiper-slide swiper-slide-prev" style="margin-right: 10px;" data-swiper-slide-index="0">
+                                            <div class="bg-cover bg-center w-full h-full" style="background-image: url(/public/images/toursImage/qatar1.webp);"></div>
                                         </div>
-                                        <div class="swiper-slide swiper-slide-active" data-swiper-slide-index="1"
-                                            style="margin-right: 10px;">
-                                            <div class="bg-cover bg-center w-full h-full"
-                                                style="background-image: url(/public/images/toursImage/qatar2.webp);">
-                                            </div>
+                                        <div class="swiper-slide swiper-slide-active" data-swiper-slide-index="1" style="margin-right: 10px;">
+                                            <div class="bg-cover bg-center w-full h-full" style="background-image: url(/public/images/toursImage/qatar2.webp);"></div>
                                         </div>
-                                        <div class="swiper-slide swiper-slide-next" data-swiper-slide-index="2"
-                                            style="margin-right: 10px;">
-                                            <div class="bg-cover bg-center w-full h-full"
-                                                style="background-image: url(/public/images/toursImage/qatar3.webp);">
-                                            </div>
+                                        <div class="swiper-slide swiper-slide-next" data-swiper-slide-index="2" style="margin-right: 10px;">
+                                            <div class="bg-cover bg-center w-full h-full" style="background-image: url(/public/images/toursImage/qatar3.webp);"></div>
                                         </div>
                                     </div>
                                     <div class="swiper-button-prev"></div>
                                     <div class="swiper-button-next"></div>
                                 </div>
+                              //////
                             </div>
                             <div class="">
                                 <div class="relative" style="opacity: 1; transform: none;">
@@ -4287,6 +4283,25 @@ Constrain images and videos to the parent width and preserve their intrinsic asp
   </next-route-announcer>
 
   <script type="module" src="/script.js"></script>
+  <script type="module" src="/tours.js"></script>
+
+  <!-- Swiper JS -->
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        var mySwiper = new Swiper('.mySwiper', {
+            // Настройки слайдера
+            slidesPerView: 1,
+            spaceBetween: 10,
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            }
+        });
+    });
+</script>
+
 
 </body>
 

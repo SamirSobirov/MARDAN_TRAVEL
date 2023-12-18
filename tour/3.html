@@ -13,6 +13,9 @@
     <meta property="og:locale" content="ru_RU">
     <link rel="icon" sizes="32x32" href="/public/images/icons/mardan_travel_img.jpg">
 
+       <!-- Swiper CSS -->
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
     <link rel="stylesheet" href="/style.css">
 
 </head>
@@ -4315,6 +4318,23 @@ Constrain images and videos to the parent width and preserve their intrinsic asp
     </next-route-announcer>
 
     <script type="module" src="/script.js"></script>
+
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        var mySwiper = new Swiper('.mySwiper', {
+            // Настройки слайдера
+            slidesPerView: 1,
+            spaceBetween: 10,
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            }
+        });
+    });
+</script>
 
 
 </body>
