@@ -3888,7 +3888,7 @@ Constrain images and videos to the parent width and preserve their intrinsic asp
                     <div class="">
                         <section class="space-y-10">
 
-                            //////////////
+        
                             <div style="opacity: 1; transform: none;">
                                 <div class="swiper swiper-initialized swiper-horizontal swiper-backface-hidden mySwiper aspect-[16/8.5] md:aspect-[16/5.5] rounded-2xl">
                                     <div class="swiper-wrapper" style="transition-duration: 0ms; transition-delay: 0ms; transform: translate3d(-1940px, 0px, 0px);">
@@ -3995,7 +3995,69 @@ Constrain images and videos to the parent width and preserve their intrinsic asp
                                         <div class="border-t border-[var(--main-color-two)]"></div>
                                         <h1 class="text-white text-2xl font-semibold lg:text-[26px]">Часто задаваемые
                                             вопросы:</h1>
-                                        <div>
+
+
+
+                                            <div class="accordion" onclick="toggleAccordion('accordion1')">
+                                                <div class="accordion-header">Как я могу забронировать тур?</div>
+                                                <div class="accordion-content" id="accordion1">
+                                                  <p>Вы можете легко забронировать тур, заполнив нашу удобную онлайн-форму на сайте. Также, вы можете связаться с нами по телефону +998 (95) 323-88-80 или по электронной почте thtagency02@gmail.com для получения помощи.</p>
+                                                </div>
+                                              </div>
+                                              
+                                              <div class="accordion" onclick="toggleAccordion('accordion2')">
+                                                <div class="accordion-header">Какие документы мне понадобятся для путешествия?</div>
+                                                <div class="accordion-content" id="accordion2">
+                                                  <p>Для международных поездок вам потребуется виза, паспорт и, возможно, медицинская страховка. Подробные указания будут предоставлены при бронировании.</p>
+                                                </div>
+                                              </div>
+
+                                              <style>
+                                                .accordion {
+                                                  margin-bottom: 10px;
+                                                  background-color: rgba(0, 154, 21, 0.873);
+                                                  /* height: 50px; */
+                                                  border-radius: 12px;
+                                                  
+                                                }
+                                            
+                                                .accordion .accordion-content p {
+                                                    align-items: center;
+                                                    text-align: center;
+                                                    justify-content: center;
+                                                   
+                                                }
+
+                                                .accordion .accordion-content{
+                                                     background-color: rgba(0, 154, 21, 0.873);
+                                                }
+
+                                                .accordion .accordion-header {
+                                                   margin-left: 10px;
+                                                }
+
+
+                                                .accordion-content {
+                                                  display: none;
+                                                  padding: 10px;
+                                                  background-color: #f5f5f5;
+                                                }
+                                              </style>
+
+
+
+<script>
+    function toggleAccordion(id) {
+      var element = document.getElementById(id);
+      if (element.style.display === 'block') {
+        element.style.display = 'none';
+      } else {
+        element.style.display = 'block';
+      }
+    }
+  </script>
+  
+                                        <!-- <div>
                                             <div
                                                 class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiAccordion-root MuiAccordion-rounded MuiAccordion-gutters css-oa6kzb-MuiPaper-root-MuiAccordion-root">
                                                 <div class="MuiButtonBase-root MuiAccordionSummary-root MuiAccordionSummary-gutters css-k3ufwx-MuiButtonBase-root-MuiAccordionSummary-root"
@@ -4182,7 +4244,7 @@ Constrain images and videos to the parent width and preserve their intrinsic asp
                                                     </div>
                                                 </div>
                                             </div>
-                                        </div>
+                                        </div> -->
                                     </div>
                                     <div class="hidden relative lg:block lg:max-w-[340px] xl:max-w-[350px]"
                                         style="opacity: 1; transform: none;">
@@ -4301,6 +4363,7 @@ Constrain images and videos to the parent width and preserve their intrinsic asp
         });
     });
 </script>
+
 
 
 </body>
