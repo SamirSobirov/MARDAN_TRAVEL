@@ -3793,9 +3793,21 @@ footer {
   border-radius: 4px;
 }
 
+#a_tours_page {
+  margin-top: 50px;
+}
 
 
-  
+#travel_tours {
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  border-radius: 2px;
+  gap: 20px;
+
+}
 
 
 #footer_logo {
