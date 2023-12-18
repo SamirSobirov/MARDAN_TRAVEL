@@ -3795,6 +3795,15 @@ footer {
 
 
 
+#travel_tours {
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  height: 450px;
+  width: 100%;
+  border-radius: 2px;
+  margin-top: 130px;
+}
 
 
 #footer_logo {
