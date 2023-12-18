@@ -45,7 +45,7 @@ const tours = [
 const tourContainer = document.getElementById("tour_div");
 
 // Создаем элементы для каждого тура и добавляем их в контейнер
-tours.forEach(tour => {
+function createTourElement(tour) {
   const tourItem = document.createElement("div");
   tourItem.classList.add("aspect-[1/1.33]");
 
@@ -55,7 +55,6 @@ tours.forEach(tour => {
   tourLink.style.backgroundImage = `url("${tour.image}")`;
 
   const tourBtn = document.createElement("div");
-  tourBtn.id = "tour_btn";
   tourBtn.classList.add("w-full", "py-2", "bg-[var(--main-color-two)]", "text-[#fff]");
 
   const tourName = document.createElement("p");
@@ -65,7 +64,14 @@ tours.forEach(tour => {
   tourBtn.appendChild(tourName);
   tourLink.appendChild(tourBtn);
   tourItem.appendChild(tourLink);
-  tourContainer.appendChild(tourItem);
-});
+  return tourItem;
+}
 
+function appendToursToContainer(container, tours) {
+  tours.forEach(tour => {
+    const tourElement = createTourElement(tour);
+    container.appendChild(tourElement);
+  });
+}
 
+appendToursToContainer(tourContainer, tours);
