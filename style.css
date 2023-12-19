@@ -3825,3 +3825,10 @@ footer {
   width: 200px;
   height: 100px;
 }
+
+#swiper_tour_img {
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+}
