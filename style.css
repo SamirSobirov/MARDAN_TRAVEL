@@ -3809,6 +3809,26 @@ footer {
 
 }
 
+#btn_lang {
+  width: 30px;
+  height: 30px;
+}
+
+#lang_usa {
+  margin-top: 10px;
+  width: 30px;
+  height: 30px;
+}
+
+#lang_russ {
+  width: 30px;
+  height: 30px;
+  margin-top: 10px;
+}
+
+#modal {
+  
+}
 
 #footer_logo {
   object-fit: contain;
