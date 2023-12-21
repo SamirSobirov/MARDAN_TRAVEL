@@ -3812,7 +3812,16 @@ footer {
 #btn_lang {
   width: 25px;
   height: 25px;
+  object-fit: contain;
+  background-color: transparent;
+  border: none;
 }
+
+#btn_lang:hover{
+  background-color: green;
+}
+
+
 
 #lang_usa {
   object-fit: contain;
@@ -3820,6 +3829,7 @@ footer {
   width: 20px;
   height: 20px;
 }
+
 
 #lang_russ {
   object-fit: contain;
