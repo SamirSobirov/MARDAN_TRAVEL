@@ -3822,6 +3822,15 @@ footer {
 }
 
 
+.tour-item img {
+  transition: transform 0.3s ease;
+}
+
+.tour-item:hover img {
+  transform: scale(1.05);
+}
+
+
 
 #lang_usa {
   object-fit: contain;
