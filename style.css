@@ -3817,10 +3817,6 @@ footer {
   border: none;
 }
 
-#btn_lang:hover{
-  background-color: green;
-}
-
 
 .tour-item img {
   transition: transform 0.3s ease;
