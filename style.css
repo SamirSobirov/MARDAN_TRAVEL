@@ -3815,20 +3815,19 @@ footer {
 }
 
 #lang_usa {
+  object-fit: contain;
   margin-top: 10px;
-  width: 30px;
-  height: 30px;
+  width: 20px;
+  height: 20px;
 }
 
 #lang_russ {
-  width: 30px;
-  height: 30px;
+  object-fit: contain;
+  width: 20px;
+  height: 20px;
   margin-top: 10px;
 }
 
-#modal {
-  
-}
 
 #footer_logo {
   object-fit: contain;
